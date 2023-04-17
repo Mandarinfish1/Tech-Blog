@@ -62,7 +62,7 @@
 
 # Tech Blog Repostory Link
 
-- 
+- https://github.com/Mandarinfish1/Tech-Blog
 
 # Questions
 
