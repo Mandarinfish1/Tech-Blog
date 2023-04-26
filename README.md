@@ -50,7 +50,7 @@
 
 ## Reference
 
-- University of Richmond Full Stack Bootcamp
+- University of Richmond Full Stack Bootcamp Module 14 and https://github.com/cliff-rosenberg/14-MVC-Tech-Blog/tree/master
 
 ## Test Instructions
 
