@@ -1,11 +1,15 @@
-const router = require("express").Router()
+//importing the required modules and setting up routes:
+const express = require("express");
+const router = express.Router();
 
-const userRoutes = require("./user-routes.js")
-const postRoutes = require("./post-routes")
-const noteRoutes = require("./notes-routes")
+const apiRoutes = require("./api");
+const homeRoutes = require("./homeRoutes");
 
-router.use("/user", userRoutes)
-router.use("/post", postRoutes)
-router.use("/note", noteRoutes)
+function setupRoutes() {
+  router.use("/", homeRoutes);
+  router.use("/api", apiRoutes);
+}
 
-module.exports = router
+setupRoutes();
+
+module.exports = router;

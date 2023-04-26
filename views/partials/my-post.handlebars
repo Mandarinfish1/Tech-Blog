@@ -1,0 +1,15 @@
+{{!-- Template for displaying each post on the Dashboard page --}}
+<div class="col-6">
+  <div class="card mt-3">
+    <div class="card-body">
+      <div class="text-center">
+        <span class="fw-light fs-4">Title of Post: </span>
+        <a href="/api/dashboard/edit/{{id}}" data-toggle="tooltip" data-bs-animation="true"
+          post_title="Select to open the post" class="link-info text-decoration-none fs-4">
+          {{post_title}}
+        </a>
+      </div>
+      <p class="text-center fw-lighter">Entry Date: {{config_date date_entered}}</p>
+    </div>
+  </div>
+</div>

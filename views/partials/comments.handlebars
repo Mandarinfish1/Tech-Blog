@@ -1,0 +1,19 @@
+<div class="comments">
+ <h2 class="mt-4 mb-3">Comments</h2>
+ {{#each this}}
+ <div class="card mb-3">
+  <div class="card-header d-flex align-items-center bg-light">
+   <i class="fa fa-comments mr-2 text-primary"></i>
+   <h6 class="text-dark m-0 font-weight-bold">
+    {{user.username}}
+   </h6>
+  </div>
+  <div class="card-body">
+   <p class="card-text">{{comment_section}}</p>
+  </div>
+  <div class="card-footer bg-light text-muted small">
+   Comment by {{user.username}} on {{config_date date_entered}}
+  </div>
+ </div>
+ {{/each}}
+</div>
